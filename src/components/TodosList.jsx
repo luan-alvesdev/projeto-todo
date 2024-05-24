@@ -10,13 +10,12 @@ function TodosList() {
     <>
       <div className="todos">
 
-        {store.filteredTodos().map(todo =>
+        {store.filteredTodos().length ? store.filteredTodos().map(todo =>
           <Todo
             todo={todo}
             key={todo.id}
           />
-
-        )}
+        ) : 'Nenhuma tarefa na lista.'}
 
       </div>
     </>

@@ -13,8 +13,7 @@ function Todo({ todo }) {
                         type: 'deleted',
                         id: todo.id
                       })}
-                    className="erase"
-                >
+                    className="erase">
                     x erase
                 </button>
 
